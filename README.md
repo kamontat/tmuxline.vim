@@ -86,6 +86,12 @@ source-file [file]
 if-shell "test -f [file]" "source [file]"
 ```
 
+PS. to auto refresh the tmuxline 
+Just add this to `tmux.conf`
+```
+set -g status-interval 1
+```
+
 Note that `:Tmuxline` and `:TmuxlineSnapshot` are available only when vim is inside a tmux session.
 
 ## Configuration
